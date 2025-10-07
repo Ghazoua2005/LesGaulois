@@ -3,6 +3,7 @@ package personnages;
 public class Gaulois {
 	private String nom;
 	private int force;
+	private Village village;
 
 	public Gaulois(String nom, int force) {
 		super();
@@ -12,6 +13,10 @@ public class Gaulois {
 
 	public String getNom() {
 		return nom;
+	}
+
+	public void setVillage(Village village) {
+		this.village = village;
 	}
 
 	public void parler(String texte) {
